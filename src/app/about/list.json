@@ -1,5 +1,5 @@
 {
-	"title": "关于本站",
-	"description": "一个基于 Github 的现代化博客系统",
-	"content": "📦网站基于 Github 仓库完全存储，所有内容版本可控\n\n🚀无后端，无 serverless function，纯静态站点\n\n✏️文章通过可视化 UI 直接编辑并提交到 Github 仓库\n\n🔑所有用户都可以编辑，提交需要 Owner 的 Private Key\n\n## 技术栈\n\n- Next.js\n- React\n- TypeScript\n- Tailwind CSS\n- Motion\n- Github API"
+	"title": "关于我",
+	"description": "一个很厉害的码农",
+	"content": "👋 你好，我是 Zhang Feng，一个热爱写代码的全栈工程师。\n\n💻 喜欢钻研源码、打磨工程细节，也喜欢把复杂的问题拆成优雅的实现。\n\n📝 这里记录我的开发笔记、技术折腾和一些思考。\n\n## 技术栈\n\n- Next.js / React / TypeScript\n- Node.js / 全栈开发\n- Tailwind CSS / Motion\n- 持续学习中…\n\n## 关于本站\n\n基于 GitHub 仓库存储，内容版本可控，纯静态部署在 Cloudflare。"
 }
