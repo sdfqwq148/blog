@@ -48,3 +48,6 @@ next-env.d.ts
 .history/
 # downloaded archive
 2025-blog-public-main.zip
+
+# local-only updater script (contains token, never commit)
+update.py
