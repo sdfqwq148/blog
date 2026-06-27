@@ -80,7 +80,7 @@ export default function SnowfallBackground({ zIndex, count = 125 }: { zIndex: nu
 					{snowflake.type === 'dot' ? (
 						<div className='h-full w-full rounded-full bg-white' />
 					) : (
-						<img src={SNOWFLAKE_IMAGES[snowflake.imageIndex!]} alt='' className='h-full w-full object-contain' draggable={false} />
+						<img src={SNOWFLAKE_IMAGES[snowflake.imageIndex!]} alt='' loading='lazy' decoding='async' className='h-full w-full object-contain' draggable={false} />
 					)}
 				</motion.div>
 			))}

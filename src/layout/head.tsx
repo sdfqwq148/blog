@@ -8,13 +8,11 @@ export default function Head() {
 
 			<link rel='icon' href='/favicon.png' />
 
-			<link rel='preconnect' href='https://fonts.googleapis.cn' />
-			<link rel='preconnect' href='https://fonts.gstatic.cn' crossOrigin='anonymous' />
+			{/* 字体已由 next/font 自托管，无需再外链 Google Fonts */}
 
-			<link href='https://fonts.googleapis.cn/css2?family=Averia+Gruesa+Libre&display=swap' rel='stylesheet' />
-
-			<Script src='https://www.googletagmanager.com/gtag/js?id=G-ZNSFR7C9PM' />
-			<Script id='google-analytics'>
+			{/* 统计脚本延后到页面空闲再加载，不与首屏渲染抢资源 */}
+			<Script src='https://www.googletagmanager.com/gtag/js?id=G-ZNSFR7C9PM' strategy='lazyOnload' />
+			<Script id='google-analytics' strategy='lazyOnload'>
 				{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

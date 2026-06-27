@@ -51,3 +51,6 @@ next-env.d.ts
 
 # local-only updater script (contains token, never commit)
 update.py
+
+# image backups created by compress_images.py (local only)
+*.bak

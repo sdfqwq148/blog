@@ -33,7 +33,7 @@ export function HatSection({ formData, setFormData }: HatSectionProps) {
 								className={`block w-full overflow-hidden rounded-xl border bg-white/60 transition-all ${
 									isActive ? 'ring-brand shadow-md ring-2' : 'hover:border-brand/60'
 								}`}>
-								<img src={`/images/hats/${index}.webp`} alt={`hat ${index}`} className='h-20 w-full object-contain' />
+								<img src={`/images/hats/${index}.webp`} alt={`hat ${index}`} loading='lazy' decoding='async' className='h-20 w-full object-contain' />
 							</button>
 							{isActive && (
 								<span className='bg-brand pointer-events-none absolute top-1 left-1 rounded-full px-2 py-0.5 text-[10px] text-white shadow'>当前使用</span>

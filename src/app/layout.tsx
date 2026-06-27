@@ -1,9 +1,19 @@
 import '@/styles/globals.css'
 
 import type { Metadata } from 'next'
+import { Averia_Gruesa_Libre } from 'next/font/google'
 import Layout from '@/layout'
 import Head from '@/layout/head'
 import siteContent from '@/config/site-content.json'
+
+// 自托管字体：构建期下载并随站点一起走 CDN，去掉运行时的阻塞请求与字体闪烁
+const averia = Averia_Gruesa_Libre({
+	weight: '400',
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-averia-loaded',
+	fallback: ['sans-serif']
+})
 
 const {
 	meta: { title, description },
@@ -37,7 +47,7 @@ const htmlStyle = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang='en' suppressHydrationWarning style={htmlStyle}>
+		<html lang='en' suppressHydrationWarning style={htmlStyle} className={averia.variable}>
 			<Head />
 
 			<body>

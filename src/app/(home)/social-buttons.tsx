@@ -206,7 +206,7 @@ export default function SocialButtons() {
 													left: buttonRefs.current[button.id] ? `${buttonRefs.current[button.id]!.getBoundingClientRect().left}px` : '0px',
 													boxShadow: '0 12px 40px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
 												}}>
-												<img src={button.value} alt='QR Code' className='h-48 w-48 rounded-lg object-cover' />
+												<img src={button.value} alt='QR Code' loading='lazy' decoding='async' className='h-48 w-48 rounded-lg object-cover' />
 											</motion.div>
 										</>
 									)}
